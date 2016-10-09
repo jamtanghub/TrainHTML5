@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TrainHTML5:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/TrainHTML5_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="TrainHTML5/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TrainHTML5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

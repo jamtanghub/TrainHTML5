@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+
+    <script src="../../lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+
+
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+            margin:0
+        }
+        .panel-body>div{
+            border:1px solid deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="starter-template" id="login" style="max-width: 600px">
+        <h2 class="form-signin-heading">输入名字开始chat</h2>
+        <input id="name" style="margin:10px" type="text" class="form-control" placeholder="用户名" required=""
+               autofocus="">
+        <button id="go-chat" style="margin:10px" class="btn btn-lg btn-primary btn-block" type="submit">GO</button>
+    </div>
+
+    <div id="chat" class="hide" style="margin-top: 50px">
+
+        <div class="starter-template">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div style="height: 300px;overflow: auto"  id="ginp" class="form-control">
+
+
+                    </div>
+                    <textarea id="inp"  class="form-control" rows="3"></textarea>
+                    <div>
+                        <button id="send" style="float:right;" class="btn btn-default">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/socket.js"></script>
+</html>
